@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Archivo-Bold';
+    src: url('../fonts/Archivo-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Archivo-Regular';
+    src: url('../fonts/Archivo-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'ArchivoNarrow-Bold';
+    src: url('../fonts/ArchivoNarrow-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'ArchivoNarrow-Regular';
+    src: url('../fonts/ArchivoNarrow-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  :root {
+    --color-mint: #C9EBEE;
+    --color-pink: #F7D6CE;
+    --color-yellow: #F4E6CB;
+    --color-blue: #CAEDFF;
+    --color-background-gray:#F9F9F9;
+    --color-dark-gray: #5C5C5C;
+    --color-light-gray: #E7E7E7;
+  }
+
+  * {
+    color: var(--color-dark-gray);
+    line-height: 1.5;
+  }
+
+  body {
+    background-color: var(--color-background-gray);
+  }
+
+  /* 41.056px */
+h1 {
+  font-family: 'ArchivoNarrow-Regular', serif;
+  font-size: 2.566rem;
+}
+
+/* 28.832px */
+h2 {
+  font-family: 'ArchivoNarrow-Regular';
+  font-size: 1.802rem;
+} 
+
+/* 20px */
+h3 {
+  font-family: 'Archivo-Regular', serif;
+  font-size: 1.25rem;
+}
+
+/* 16px */
+p {
+  font-family: 'Archivo-Regular', serif;
+  font-size: 1rem;
+}
+
+body {
+    /* max-width: 636px; */
+    max-width: 800px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+}
+
+span {
+    background-color: var(--color-mint);
+    padding: 0 5px;
+}
+
+/* 30px padding, 491px max-width */
+body {
+    /* max-width: 17.5rem; */
+    margin: auto;
+    padding: 0 1.875rem;
+    max-width: 30.688rem;
+  }
+
+@media screen and (min-width: 600px) {
+    body {
+      /* max-width: 491px; */
+      margin: auto;
+      max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+      /* max-width: 491px; */
+      margin: auto;
+      max-width: 800px;
+  }
+}
