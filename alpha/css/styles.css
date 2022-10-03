@@ -15,14 +15,6 @@
   }
   
   @font-face {
-    font-family: 'ArchivoNarrow-Bold';
-    src: url('../fonts/ArchivoNarrow-Bold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
     font-family: 'ArchivoNarrow-Regular';
     src: url('../fonts/ArchivoNarrow-Regular.woff2') format('woff2');
     font-weight: normal;
@@ -31,25 +23,15 @@
   }
   
   :root {
-    --color-mint: #C9EBEE;
-    --color-pink: #F7D6CE;
-    --color-yellow: #F4E6CB;
-    --color-blue: #CAEDFF;
     --color-background-gray:#F9F9F9;
-    --color-dark-gray: #5C5C5C;
-    --color-light-gray: #E7E7E7;
+    --color-magenta: #9E025B;
   }
 
-  * {
-    color: var(--color-dark-gray);
-    line-height: 1.5;
-  }
+* {
+  line-height: 1.5;
+}
 
-  body {
-    background-color: var(--color-background-gray);
-  }
-
-  /* 41.056px */
+/* 41.056px */
 h1 {
   font-family: 'ArchivoNarrow-Regular', serif;
   font-size: 2.566rem;
@@ -63,51 +45,165 @@ h2 {
 
 /* 20px */
 h3 {
+  font-family: 'Archivo-Bold', serif;
+  font-size: 1.25rem;
+  color: var(--color-magenta);
+}
+
+/* 20px */
+h4 {
   font-family: 'Archivo-Regular', serif;
   font-size: 1.25rem;
+}
+
+/* 16px */
+h5 {
+  font-family: 'Archivo-Bold', serif;
+  font-size: 1rem;
+  margin: 0;
 }
 
 /* 16px */
 p {
   font-family: 'Archivo-Regular', serif;
   font-size: 1rem;
-}
-
-body {
-    /* max-width: 636px; */
-    max-width: 800px;
-    margin: auto;
-}
-
-.title {
-    text-align: center;
-}
-
-span {
-    background-color: var(--color-mint);
-    padding: 0 5px;
+  margin: 0;
 }
 
 /* 30px padding, 491px max-width */
 body {
-    /* max-width: 17.5rem; */
-    margin: auto;
-    padding: 0 1.875rem;
-    max-width: 30.688rem;
+  /* max-width: 17.5rem; */
+  margin: auto;
+  padding: 0 1.875rem;
+  max-width: 1000px;
+  background-color: var(--color-background-gray);
+}
+
+/* 60px */
+section {
+  margin-bottom: 3.75rem;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color:var(--color-magenta);
+}
+
+/* 16px */
+li {
+  font-family: 'Archivo-Regular', serif;
+  font-size: 1rem;
+}
+
+/* 16px */
+ul {
+  padding-left:16px;
+}
+
+.title__text {
+  text-align: center;
+}
+
+.title__underline {
+text-decoration: underline;
+text-decoration-color: var(--color-magenta);
+text-decoration-thickness: 0.25rem;
+text-underline-offset: 0.5rem;
+}
+
+.reference__underline {
+  text-decoration: underline;
+  text-decoration-color: var(--color-magenta);
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.4rem;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  height: 525px;
+  border: 2px solid rgb(229, 229, 229);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-right: 30px;
+}
+
+.card__new {
+  height: 925px;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.alpha__images-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.alpha__images {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid rgb(229, 229, 229);
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .card__container {
+    width: 100%;
+    display: block;
   }
 
-@media screen and (min-width: 600px) {
-    body {
-      /* max-width: 491px; */
-      margin: auto;
-      max-width: 500px;
+  .card {
+    margin: 0 auto 30px;
+    height: 400px;
+  }
+
+  .alpha__images-container {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .alpha__images {
+    margin: 0 auto 30px;
   }
 }
 
-@media screen and (min-width: 1000px) {
-    body {
-      /* max-width: 491px; */
-      margin: auto;
-      max-width: 800px;
+@media screen and (max-width: 1000px) {
+  .card__container {
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-between;
+  }
+
+  .card {
+    margin: 0 auto 30px;
+    height: 400px;
+  }
+
+  .card__new {
+    height: 600px;
+  }
+
+  .alpha__images-container {
+    margin: 0 auto;
+  }
+
+  .alpha__images {
+    margin: 0 auto 30px;
   }
 }
