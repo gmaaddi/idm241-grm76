@@ -70,12 +70,11 @@ p {
   margin: 0;
 }
 
-/* 30px padding, 491px max-width */
+/* 30px padding, 1000px max-width */
 body {
-  /* max-width: 17.5rem; */
   margin: auto;
   padding: 0 1.875rem;
-  max-width: 1000px;
+  max-width: 62.5rem;
   background-color: var(--color-background-gray);
 }
 
@@ -104,7 +103,7 @@ li {
 
 /* 16px */
 ul {
-  padding-left:16px;
+  padding-left: 1rem;
 }
 
 .title__text {
@@ -125,20 +124,22 @@ text-underline-offset: 0.5rem;
   text-underline-offset: 0.4rem;
 }
 
+/* width: 300px; height: 525px; border: 2px; padding: 20px margin-right: 30px*/
 .card {
   background-color: white;
-  width: 300px;
-  height: 525px;
-  border: 2px solid rgb(229, 229, 229);
+  width: 18.75rem;
+  height: 32.813rem;
+  border: 0.125rem solid rgb(229, 229, 229);
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
-  margin-right: 30px;
+  padding: 1.25rem;
+  margin-right: 1.875rem;
 }
 
+/* height: 925px */
 .card__new {
-  height: 925px;
+  height: 57.813rem;
 }
 
 .card__container {
@@ -153,12 +154,13 @@ text-underline-offset: 0.5rem;
   flex-wrap: wrap;
 }
 
+/* border: 2px; margin-right: 30px */
 .alpha__images {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 2px solid rgb(229, 229, 229);
-  margin-right: 30px;
+  border: 0.125rem solid rgb(229, 229, 229);
+  margin-right: 1.875rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -167,13 +169,15 @@ text-underline-offset: 0.5rem;
     display: block;
   }
 
+  /* margin: 30px; height: 400px */
   .card {
-    margin: 0 auto 30px;
-    height: 400px;
+    margin: 0 auto 1.875rem;
+    height: 25rem;
   }
 
+  /* max-width: 750px */
   .alpha__images-container {
-    max-width: 750px;
+    max-width: 46.875rem;
     margin: 0 auto;
   }
 
@@ -185,25 +189,27 @@ text-underline-offset: 0.5rem;
 @media screen and (max-width: 1000px) {
   .card__container {
     flex-wrap: wrap;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 auto;
     justify-content: space-between;
   }
 
+  /* margin: 30px; height: 400px */
   .card {
-    margin: 0 auto 30px;
-    height: 400px;
+    margin: 0 auto 1.875rem;
+    height: 25rem;
   }
 
+  /* height: 600px */
   .card__new {
-    height: 600px;
+    height: 37.5rem;
   }
 
   .alpha__images-container {
     margin: 0 auto;
   }
 
+  /* margin: 30px */
   .alpha__images {
-    margin: 0 auto 30px;
+    margin: 0 auto 1.875rem;
   }
 }
