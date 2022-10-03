@@ -9,26 +9,156 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1 class="title">IDM241 Microinteractions - Alpha</h1>
-
-    <h2>
-        <span>Original Interface</span>
-    </h2>
-
-    <h2>
-        <span>Alpha Overview</span>
-    </h2>
-
-    <div class="alpha-information">
-        <h3>Triggers</h3>
-        <h3>Rules</h3>
-        <h3>Feedback</h3>
-        <h3>Loops and Modes</h3>
+    <div class="title__container">
+        <h1 class="title__text">
+            <span class="title__underline">IDM241 Microinteractions</span>
+        </h1>
     </div>
 
-    <h2>
-        <span>Alpha Visualization</span>
-    </h2>
+    <section class="reference__container">
+        <h2 class="reference__text">
+            Original Interface
+        </h2>
+        <h4 class="reference__underline">
+            <a href="https://www.premiumoutlets.com/outlet/gloucester/stores" target="_blank">Gloucester Premium Outlets Directory</a>
+        </h4>
+    </section>
+
+    <section class="original__container">
+        <h2 class="original__text">
+            Alpha Overview - Original Site
+        </h2>
+
+        <div class="card__container">
+            <div class="card">
+                <img class="card__icon" src="icon_images/plus.png" alt="triggers-icon" height="45px">
+                <h3>Triggers</h3>
+                <ul>
+                    <li>Hover over button</li>
+                    <li>Hover off button</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <img class="card__icon" src="icon_images/check.png" alt="rules-icon" height="45px">
+                <h3>Rules</h3>
+
+                <h5>Hover state on:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                    <li>Dark gray gradually fades in to replace light gray fill of button</li>
+                </ul>
+
+                <h5>Hover state off:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                    <li>Dark gray fill of button gradually fades out to return button to light gray fill</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <img class="card__icon" src="icon_images/warning-sign.png" alt="feedback-icon" height="45px">
+                <h3>Feedback</h3>
+
+                <h5>Hover state on:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                    <li>Dark gray gradually fades in to replace light gray fill of button</li>
+                </ul>
+
+                <h5>Hover state off:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                    <li>Dark gray fill of button gradually fades out to return button to light gray fill</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <img class="card__icon" src="icon_images/arrow.png" alt="loops-modes-icon" height="45px">
+                <h3>Loops &#38; Modes</h3>
+                <p>N/A</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="visualization__container">
+        <h2>
+            Alpha Visualization
+        </h2>
+
+        <div class="alpha__images-container">
+            <img class="alpha__images" src="alpha_images/alpha-1.jpg" alt="alpha-1" height="285px">
+            <img class="alpha__images" src="alpha_images/alpha-2.jpg" alt="alpha-2" height="285px">
+            <img class="alpha__images" src="alpha_images/alpha-3.jpg" alt="alpha-3" height="285px">
+            <img class="alpha__images" src="alpha_images/alpha-4.jpg" alt="alpha-4" height="285px">
+        </div>
+    </section>
+
+    <section class="new__container">
+        <h2 class="new__text">
+            Alpha Overview - New Design
+        </h2>
+
+        <div class="card__container">
+            <div class="card card__new">
+                <img class="card__icon" src="icon_images/plus.png" alt="triggers-icon" height="45px">
+                <h3>Triggers</h3>
+                <ul>
+                    <li>Hover over button</li>
+                    <li>Hover off button</li>
+                </ul>
+            </div>
+
+            <div class="card card__new">
+                <img class="card__icon" src="icon_images/check.png" alt="rules-icon" height="45px">
+                <h3>Rules</h3>
+
+                <h5>Hover state on:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                    <li>Black slides in to fill the button from left to right; 0.3 seconds</li>
+                    <li>Location icon and location text move to the left by 8 pixels; 0.3 seconds</li>
+                    <li>Arrow symbol fades in from 0% opacity to 100% opacity as it slides in from left to right by 8 pixels; 0.3 seconds</li>
+                </ul>
+
+                <h5>Hover state off:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                    <li>Black fill slides from right to left to reveal dark gray fill of button; 0.3 seconds</li>
+                    <li>Location icon and location text move to the right by 8 pixels; 0.3 seconds</li>
+                    <li>Arrow symbol fades out from 100% opacity to 0% opacity; 0.3 seconds</li>
+                </ul>
+            </div>
+
+            <div class="card card__new">
+                <img class="card__icon" src="icon_images/warning-sign.png" alt="feedback-icon" height="45px">
+                <h3>Feedback</h3>
+
+                <h5>Hover state on:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                    <li>Black slides in to fill the button from left to right; 0.3 seconds</li>
+                    <li>Location icon and location text move to the left by 8 pixels; 0.3 seconds</li>
+                    <li>Arrow symbol fades in from 0% opacity to 100% opacity as it slides in from left to right by 8 pixels; 0.3 seconds</li>
+                </ul>
+
+                <h5>Hover state off:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                    <li>Black fill slides from right to left to reveal dark gray fill of button; 0.3 seconds</li>
+                    <li>Location icon and location text move to the right by 8 pixels; 0.3 seconds</li>
+                    <li>Arrow symbol fades out from 100% opacity to 0% opacity; 0.3 seconds</li>
+                </ul>
+            </div>
+
+            <div class="card card__new">
+                <img class="card__icon" src="icon_images/arrow.png" alt="loops-modes-icon" height="45px">
+                <h3>Loops &#38; Modes</h3>
+                <p>N/A</p>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
 
