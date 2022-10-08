@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microinteractions Alpha Card Design</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="title__container">
+        <h1 class="title__text">
+            <span class="title__underline">IDM241 Alpha Build</span>
+        </h1>
+
+        <h2 class="new__text">
+            Microinteraction - "Main Level" Button
+        </h2>
+    </div>
+
+
+    <section class="outlet-card__container">
+        <div class="outlet-card">
+            <div class="outlet-card__img-container">
+                <img class="outlet-card__img" src="card__images/adidas_logo.png" alt="adidas_logo">
+            </div>
+
+            <div class="outlet-card__text-container">
+                <h4 class="outlet-card__text">Adidas Outlet Store</h4>
+                <h6 class="outlet-card__text">Open 10AM-8PM</h6>
+                <h4 class="outlet-card__text">(856) 208-4545</h4>
+            </div>
+
+            <div class="outlet-card__location-container">
+                <button class="outlet-card__button">
+                    <img class="icon button_left" src="card__images/pin.png" alt="pin_icon" height="20px">
+                    <h3 class="button_left">MAIN LEVEL</h3>
+                    <h3 class="arrow">&#8594;</h3>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="outlet-card">
+            <div class="outlet-card__img-container">
+                <img class="outlet-card__img" src="card__images/crocs_logo.png" alt="crocs_logo">
+            </div>
+
+            <div class="outlet-card__text-container">
+                <h4 class="outlet-card__text">Crocs</h4>
+                <h6 class="outlet-card__text">Open 10AM-8PM</h6>
+                <h4 class="outlet-card__text">(856) 302-4538</h4>
+            </div>
+
+            <div class="outlet-card__location-container">
+                <button class="outlet-card__button">
+                    <img class="icon button_left" src="card__images/pin.png" alt="pin_icon" height="20px">
+                    <h3 class="button_left">MAIN LEVEL</h3>
+                    <h3 class="arrow">&#8594;</h3>
+                </button>
+            </div>
+        </div>
+
+        <!-- Levi's Card -->
+        <div class="outlet-card">
+            <div class="outlet-card__img-container">
+                <img class="outlet-card__img" src="card__images/levis_logo.png" alt="levis_logo">
+            </div>
+
+            <div class="outlet-card__text-container">
+                <h4 class="outlet-card__text">Levi's Outlet Store</h4>
+                <h6 class="outlet-card__text">Open 10AM-8PM</h6>
+                <h4 class="outlet-card__text">(856) 302-4565</h4>
+            </div>
+
+            <div class="outlet-card__location-container">
+                <button class="outlet-card__button">
+                    <img class="icon button_left" src="card__images/pin.png" alt="pin_icon" height="20px">
+                    <h3 class="button_left">MAIN LEVEL</h3>
+                    <h3 class="arrow">&#8594;</h3>
+                </button>
+            </div>
+        </div>
+</section>
+
+
+<section class="new__container">
+    <h2 class="new__text">
+        Microinteraction - Information
+    </h2>
+
+    <div class="info-card__container">
+        <div class="info-card">
+            <img class="info-card__icon" src="icon__images/plus.png" alt="triggers-icon" height="45px">
+            <h3>Triggers</h3>
+            <ul>
+                <li>Hover over "Main Level" button on outlet card</li>
+                <li>Hover off "Main Level" button on outlet card</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <img class="info-card__icon" src="icon__images/check.png" alt="rules-icon" height="45px">
+            <h3>Rules</h3>
+
+            <h5>Hover state on:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                    <li>Black slides in to fill the button from left to right; 0.3 seconds</li>
+                    <li>Location icon and location text move to the left by 8 pixels; 0.3 seconds</li>
+                    <li>Arrow symbol fades in from 0% opacity to 100% opacity as it slides in from left to right by 8 pixels; 0.3 seconds</li>
+                </ul>
+
+            <h5>Hover state off:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                    <li>Black fill slides from right to left to reveal dark gray fill of button; 0.3 seconds</li>
+                    <li>Location icon and location text move to the right by 8 pixels; 0.3 seconds</li>
+                    <li>Arrow symbol fades out from 100% opacity to 0% opacity; 0.3 seconds</li>
+                </ul>
+        </div>
+
+        <div class="info-card">
+            <img class="info-card__icon" src="icon__images/warning-sign.png" alt="feedback-icon" height="45px">
+            <h3>Feedback</h3>
+
+            <h5>Hover state on:</h5>
+            <ul>
+                <li>Cursor changes to pointer</li>
+                <li>Black slides in to fill the button from left to right; 0.3 seconds</li>
+                <li>Location icon and location text move to the left by 8 pixels; 0.3 seconds</li>
+                <li>Arrow symbol fades in from 0% opacity to 100% opacity as it slides in from left to right by 8 pixels; 0.3 seconds</li>
+            </ul>
+
+            <h5>Hover state off:</h5>
+            <ul>
+                <li>Cursor reverts to default</li>
+                <li>Black fill slides from right to left to reveal dark gray fill of button; 0.3 seconds</li>
+                <li>Location icon and location text move to the right by 8 pixels; 0.3 seconds</li>
+                <li>Arrow symbol fades out from 100% opacity to 0% opacity; 0.3 seconds</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <img class="info-card__icon" src="icon__images/arrow.png" alt="loops-modes-icon" height="45px">
+            <h3>Loops &#38; Modes</h3>
+            <p>N/A</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
