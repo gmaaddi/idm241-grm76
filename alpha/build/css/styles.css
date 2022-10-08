@@ -312,6 +312,25 @@ ul {
     justify-content: space-evenly;
 }
 
+.reference__underline {
+    text-decoration: underline;
+    text-decoration-color: #9E025B;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.4rem;
+}
+
+a:link {
+    color: black;
+}
+  
+a:visited {
+    color: black;
+}
+  
+a:hover {
+    color: #9E025B;
+}
+
 @media screen and (max-width: 600px) {
     .outlet-card__container {
         max-width: 46.875rem;
@@ -349,8 +368,6 @@ ul {
 
       .info-card__container {
         flex-wrap: wrap;
-        /* margin: 0 30px; */
-        /* justify-content: space-between; */
       }
     
       /* margin: 30px; height: 400px */
@@ -358,9 +375,4 @@ ul {
         margin-bottom: 1.875rem;
         height: 43rem;
       }
-
-      /* .card-left {
-        margin-right: 30px;
-      } */
-  
 }
