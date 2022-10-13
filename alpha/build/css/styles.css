@@ -311,4 +311,8 @@ a:hover {
         margin-bottom: 1.875rem;
         height: 43rem;
       }
+
+    .reference__underline {
+        text-align: center;
+    }
 }
