@@ -180,45 +180,16 @@ figcaption {
   margin-left: .9375rem;
 }
 
-@media screen and (max-width: 600px) {
-  .card__container {
-    width: 100%;
-    display: block;
-  }
-
-  /* margin: 30px; height: 400px */
-  .card {
-    margin: 0 auto 1.875rem;
-    height: 25rem;
-  }
-
-  /* max-width: 750px */
-  .beta-container {
-    max-width: 46.875rem;
-    margin: 0 auto;
-  }
-
-  .beta {
-    margin: 0 auto;
-  }
+.bottom {
+  text-align: center;
 }
 
-@media screen and (max-width: 630px) {
-  .beta-container {
-    width: 60%;
-  }
 
-  h2 {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 810px) {
+/* @media screen and (max-width: 840px) {
   .beta-container3 {
     width: 60%;
   }
-}
-
+} */
 
 @media screen and (max-width: 1000px) {
   .card__container {
@@ -244,7 +215,8 @@ figcaption {
 
   /* margin: 30px */
   .beta {
-    margin: 0 auto;
+    margin: 0 8px;
+    text-align: center;
   }
 
   /* margin-top: 15px */
@@ -255,5 +227,66 @@ figcaption {
   /* margin-bottom: 30px */
   figcaption {
     margin-bottom: 1.875rem;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .beta-container3 {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .reference__underline {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .beta-container3 {
+    width: 20%;
+  }
+  
+  .beta-container {
+    width: 20%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card__container {
+    width: 100%;
+    display: block;
+  }
+
+  /* margin: 30px; height: 400px */
+  .card {
+    margin: 0 auto 1.875rem;
+    height: 900px;
+  }
+
+  /* max-width: 750px */
+  .beta-container {
+    max-width: 46.875rem;
+    margin: 0 auto;
+  }
+
+  .beta {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .original__container {
+    min-height: 345px;
+    margin: 0 -15px;
   }
 }
