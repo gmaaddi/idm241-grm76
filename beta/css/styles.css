@@ -129,7 +129,7 @@ text-underline-offset: 0.5rem;
 .card {
   background-color: white;
   width: 18.75rem;
-  height: 1360px;
+  height: 1440px;
   border: 0.125rem solid rgb(229, 229, 229);
   display: flex;
   align-items: center;
@@ -201,7 +201,7 @@ figcaption {
   /* margin: 30px; height: 400px */
   .card {
     margin: 0 auto 1.875rem;
-    height: 900px;
+    height: 940px;
   }
 
   /* height: 600px */
@@ -270,7 +270,7 @@ figcaption {
   /* margin: 30px; height: 400px */
   .card {
     margin: 0 auto 1.875rem;
-    height: 900px;
+    height: 940px;
   }
 
   /* max-width: 750px */
