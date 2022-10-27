@@ -6,26 +6,26 @@
     font-display: swap;
   }
   
-  @font-face {
+@font-face {
     font-family: 'Archivo-Regular';
     src: url('../fonts/Archivo-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-  }
+}
   
-  @font-face {
+@font-face {
     font-family: 'ArchivoNarrow-Regular';
     src: url('../fonts/ArchivoNarrow-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-  }
+}
   
-  :root {
-    --color-background:#EFEEF1;
-    --color-purple: #5B1CAE;
-  }
+:root {
+  --color-background:#EFEEF1;
+  --color-purple: #5B1CAE;
+}
 
 * {
   line-height: 1.5;
@@ -60,7 +60,7 @@ h4 {
 h5 {
   font-family: 'Archivo-Bold', serif;
   font-size: 1rem;
-  margin: 0;
+  margin: 0.785rem;
   text-align: center;
 }
 
@@ -71,11 +71,11 @@ p {
   margin: 0;
 }
 
-/* 30px padding, 1000px max-width */
+/* 30px padding, 1200px max-width */
 body {
   margin: auto;
   padding: 0 1.875rem;
-  max-width: 62.5rem;
+  max-width: 75rem;
   background-color: var(--color-background);
 }
 
@@ -129,7 +129,7 @@ text-underline-offset: 0.5rem;
 .card {
   background-color: white;
   width: 18.75rem;
-  height: 1440px;
+  max-height: 1900px;
   border: 0.125rem solid rgb(229, 229, 229);
   display: flex;
   align-items: center;
@@ -146,7 +146,7 @@ text-underline-offset: 0.5rem;
 .card__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 figure {
@@ -178,6 +178,8 @@ figcaption {
   border: 0.125rem solid rgb(229, 229, 229);
   margin-right: .9375rem;
   margin-left: .9375rem;
+
+  max-height: 400px;
 }
 
 .bottom {
@@ -191,17 +193,49 @@ figcaption {
   }
 } */
 
+@media screen and (max-width: 1200px) {
+  .card {
+    margin: 0 15px 1.875rem;
+  }
+
+  .card__container {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    width: 90%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .reference__underline {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  .beta-container3 {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    margin-bottom: 1.875rem;
+}
+
+/* 1000px size */
 @media screen and (max-width: 1000px) {
   .card__container {
     flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   /* margin: 30px; height: 400px */
   .card {
-    margin: 0 auto 1.875rem;
-    height: 940px;
+    margin: 0 15px 1.875rem;
+    max-height: 1240px;
   }
 
   /* height: 600px */
@@ -231,10 +265,15 @@ figcaption {
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 880px) {
+  
   .beta-container3 {
     width: 70%;
     margin: 0 auto;
+  }
+
+  .beta-container {
+    max-width: 500px
   }
 
   h2 {
@@ -245,12 +284,22 @@ figcaption {
     text-align: center;
   }
 }
+/* 
+@media screen and (max-width: 747px) {
+  .card1 {
+    height: 250px;
+  }
+
+  .card4 {
+    height: 250px;
+  }
+} */
 
 @media screen and (max-width: 660px) {
   .beta-container3 {
     width: 20%;
   }
-  
+
   .beta-container {
     width: 20%;
     margin: 0 auto;
@@ -270,7 +319,7 @@ figcaption {
   /* margin: 30px; height: 400px */
   .card {
     margin: 0 auto 1.875rem;
-    height: 940px;
+    max-height: 1200px;
   }
 
   /* max-width: 750px */
@@ -282,6 +331,14 @@ figcaption {
   .beta {
     margin: 0 auto;
   }
+/* 
+  .card1 {
+    height: 250px;
+  }
+
+  .card4 {
+    height: 250px;
+  } */
 }
 
 @media screen and (max-width: 400px) {
