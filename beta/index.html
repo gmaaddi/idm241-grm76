@@ -30,27 +30,36 @@
         </h2>
 
         <div class="card__container">
-            <div class="card">
+            <div class="card card1">
                 <img class="card__icon" src="icon_images/plus.png" alt="triggers-icon" height="45px">
                 <h3>Triggers</h3>
                 <ul>
+                    <li>Hover over/off image slider dots</li>
                     <li>Click on image slider dots</li>
-                    <li>Hover over round heart button</li>
-                    <li>Hover off round heart button</li>
-                    <li>Click on heart icon</li>
-                    <li>Click off heart icon</li>
+                    <li>Hover over/off round heart button</li>
+                    <li>Click/unclick heart icon</li>
                 </ul>
             </div>
 
-            <div class="card">
+            <div class="card card2">
                 <img class="card__icon" src="icon_images/check.png" alt="rules-icon" height="45px">
                 <h3>Rules</h3>
 
+                <h5>Hover over image slider dots:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                </ul>
+
+                <h5>Hover off image slider dots:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                </ul>
+
                 <h5>Click on image slider dots:</h5>
                 <ul>
                     <li>Selected dot changes to a pawprint icon</li>
                     <li>Previously selected pawprint will change to a dot</li>
-                    <li>Displayed cat image fades out to reveal new cat image that corresponds to the selected dot; 0.5 seconds</li>
+                    <li>Displayed cat image fades out as new cat image that corresponds to the selected dot fades in; 0.75 seconds</li>
                 </ul>
 
                 <h5>Hover over round heart button:</h5>
@@ -69,23 +78,34 @@
                 <ul>
                     <li>Purple fades in to fill heart icon; 0.5 seconds</li>
                     <li>Heart icon increases in scale and shrinks back to original size, retaining purple fill; 0.5 seconds</li>
+                    <li>The selected cat is added to the user's favorites, which is updated in the database</li>
                 </ul>
 
-                <h5>Click off heart icon:</h5>
+                <h5>Unclick heart icon:</h5>
                 <ul>
                     <li>Purple fill fades out, leaving the heart icon with a stroke and no fill; 0.5 seconds</li>
+                    <li>The cat is removed from the user's favorites, which is updated in the database</li>
                 </ul>
             </div>
 
-            <div class="card">
+            <div class="card card3">
                 <img class="card__icon" src="icon_images/warning-sign.png" alt="feedback-icon" height="45px">
                 <h3>Feedback</h3>
+                <h5>Hover over image slider dots:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                </ul>
+
+                <h5>Hover off image slider dots:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                </ul>
 
                 <h5>Click on image slider dots:</h5>
                 <ul>
                     <li>Selected dot changes to a pawprint icon</li>
                     <li>Previously selected pawprint will change to a dot</li>
-                    <li>Displayed cat image fades out to reveal new cat image that corresponds to the selected dot; 0.5 seconds</li>
+                    <li>Displayed cat image fades out as new cat image that corresponds to the selected dot fades in; 0.75 seconds</li>
                 </ul>
 
                 <h5>Hover over round heart button:</h5>
@@ -106,13 +126,13 @@
                     <li>Heart icon increases in scale and shrinks back to original size, retaining purple fill; 0.5 seconds</li>
                 </ul>
 
-                <h5>Click off heart icon:</h5>
+                <h5>Unclick heart icon:</h5>
                 <ul>
                     <li>Purple fill fades out, leaving the heart icon with a stroke and no fill; 0.5 seconds</li>
                 </ul>
             </div>
 
-            <div class="card">
+            <div class="card card4">
                 <img class="card__icon" src="icon_images/arrow.png" alt="loops-modes-icon" height="45px">
                 <h3>Loops &#38; Modes</h3>
                 <p>Mode: Additional cat images appear when users interact with the slider dots</p>
@@ -128,18 +148,18 @@
         <h5>Click on Image Slider Dots</h5>
         <div class="beta-container">
             <figure>
-                <img class="beta" src="beta_images/Dots-1.jpg" alt="beta-1" height="285px">
+                <img class="beta" src="beta_images/Dots-1.jpg" alt="beta-1">
                 <figcaption>Click on the second image slider dot</figcaption>
             </figure>
             
             <figure>
-                <img class="beta" src="beta_images/Dots-2.jpg" alt="beta-2" height="285px">
-                <figcaption>Cat image 1 fades out to reveal cat image 2</figcaption>
+                <img class="beta" src="beta_images/Dots-2.jpg" alt="beta-2">
+                <figcaption>Cat image 1 fades out as cat image 2 fades in</figcaption>
             </figure>
 
             <figure>
-                <img class="beta" src="beta_images/Dots-3.jpg" alt="beta-3" height="285px">
-                <figcaption>Second image slider dot changes to a pawprint</figcaption>
+                <img class="beta" src="beta_images/Dots-3.jpg" alt="beta-3">
+                <figcaption>Second image slider dot changes to a pawprint; first image slider changes from a pawprint to a dot</figcaption>
             </figure>
         </div>
 
@@ -147,17 +167,17 @@
         <div class="beta-container">
 
             <figure>
-                <img class="beta" src="beta_images/Heart-Hover-1.jpg" alt="beta-1" height="285px">
+                <img class="beta" src="beta_images/Heart-Hover-1.jpg" alt="beta-1">
                 <figcaption>Hover over heart button</figcaption>
             </figure>
 
             <figure>
-                <img class="beta" src="beta_images/Heart-Hover-2.jpg" alt="beta-2" height="285px">
+                <img class="beta" src="beta_images/Heart-Hover-2.jpg" alt="beta-2">
                 <figcaption>Opacity of white circle fading in from 50% to 100%</figcaption>
             </figure>
 
             <figure>
-                <img class="beta" src="beta_images/Heart-Hover-3.jpg" alt="beta-3" height="285px">
+                <img class="beta" src="beta_images/Heart-Hover-3.jpg" alt="beta-3">
                 <figcaption>White circle behind the heart at 100% opacity</figcaption>
             </figure>
         </div>
@@ -166,22 +186,22 @@
         <div class="beta-container beta-container3">
 
             <figure>
-                <img class="beta" src="beta_images/Heart-Fill-2.jpg" alt="beta-1" height="285px">
+                <img class="beta" src="beta_images/Heart-Fill-2.jpg" alt="beta-1">
                 <figcaption>When the heart icon is clicked, a purple fill fades in</figcaption>
             </figure>
 
             <figure>
-                <img class="beta" src="beta_images/Heart-Fill-3.jpg" alt="beta-2" height="285px">
+                <img class="beta" src="beta_images/Heart-Fill-3.jpg" alt="beta-2">
                 <figcaption>Opacity of purple heart fading in to 100%</figcaption>
             </figure>
 
             <figure>
-                <img class="beta" src="beta_images/Heart-Fill-4.jpg" alt="beta-3" height="285px">
+                <img class="beta" src="beta_images/Heart-Fill-4.jpg" alt="beta-3">
                 <figcaption>Heart icon increases in scale</figcaption>
             </figure>
 
             <figure>
-                <img class="beta" src="beta_images/Heart-Fill-5.jpg" alt="beta-4" height="285px">
+                <img class="beta" src="beta_images/Heart-Fill-5.jpg" alt="beta-4">
                 <figcaption>Heart icon shrinks back to original size</figcaption>
             </figure>
         </div>
