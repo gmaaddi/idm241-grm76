@@ -309,7 +309,7 @@ figcaption {
   /* margin: 30px; height: 400px */
   .card {
     margin: 0 auto 1.875rem;
-    max-height: 1200px;
+    /* max-height: 1440px; */
   }
 
   /* max-width: 750px */
@@ -326,7 +326,7 @@ figcaption {
 @media screen and (max-width: 400px) {
   .original__container {
     min-height: 345px;
-    margin: 0 -15px;
+    margin: 0 auto;
   }
 }
 }
