@@ -235,7 +235,7 @@ figcaption {
   /* margin: 30px; height: 400px */
   .card {
     margin: 0 15px 1.875rem;
-    max-height: 1240px;
+    max-height: 1440px;
   }
 
   /* height: 600px */
@@ -284,16 +284,6 @@ figcaption {
     text-align: center;
   }
 }
-/* 
-@media screen and (max-width: 747px) {
-  .card1 {
-    height: 250px;
-  }
-
-  .card4 {
-    height: 250px;
-  }
-} */
 
 @media screen and (max-width: 660px) {
   .beta-container3 {
@@ -331,14 +321,6 @@ figcaption {
   .beta {
     margin: 0 auto;
   }
-/* 
-  .card1 {
-    height: 250px;
-  }
-
-  .card4 {
-    height: 250px;
-  } */
 }
 
 @media screen and (max-width: 400px) {
@@ -346,4 +328,5 @@ figcaption {
     min-height: 345px;
     margin: 0 -15px;
   }
+}
 }
