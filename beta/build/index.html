@@ -4,71 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microinteractions Beta Card Design</title>
+    <title>DESKTOP BREAK DESIGN</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="pet-card__container">
+    <div class="pet-card__container"> 
         <div class="pet-card">
-            <div class="carousel picContainer">
-                <div id="image1" class="img">
-                    <img id="petCard1" class="pet-card__img" src="card_images/pet-photo_1.png" alt="Pet Photo 1" />
-                </div>
-
-                <div id="image2" class="img">
-                    <img id="petCard2" class="pet-card__img" src="card_images/pet-photo_2.png" alt="Pet Photo 2" />
-                </div>
-                
-                <div id="image3" class="img">
-                    <img id="petCard3" class="pet-card__img" src="card_images/pet-photo_3.png" alt="Pet Photo 3" />
-                </div>
-
-                <div id="image4" class="img">
-                    <img id="petCard4" class="pet-card__img" src="card_images/pet-photo_4.png" alt="Pet Photo 4" />
-                </div>
-    
+            <div class="picContainer carousel">        
                 <div class="heart-circle">
-                    <div class='large-font text-center top-20' id="heart-container">
+                    <div class='large-font text-center top-20 heart-container' id="heart-container">
                         <ion-icon name="heart">
-                        <div class='purple-heart'></div>
+                            <div class='purple-heart'></div>
                         </ion-icon>
                     </div>
                 </div>
-            </div>
 
-            <div class="pet-card__text-container">
-                <div class="dots-container dots">
-                    <div class="dot a1 dot1" >
-                        <img src="card_images/pawprint.png" id="btnA" width="25px"/>
-                    </div>
-
-                    <div class="dot a2 dot2" >
-                        <img src="card_images/dot.png" id="btnB" width="25px"/>
-                    </div>
-
-                    <div class="dot a3 dot3" >
-                        <img src="card_images/dot.png" id="btnC" width="25px"/>
-                    </div>
-
-                    <div class="dot a4 dot4" >
-                        <img src="card_images/dot.png" id="btnD" width="25px"/>
-                    </div>
-                   
-
-                    <!-- <img class="pawprint dot a1" id="btnA" src="card_images/pawprint.png" width="25px">
-                    <img class="dot a2" id="btnB" src="card_images/dot.png" width="25px"/>
-                    <img class="dot a3" id="btnC" src="card_images/dot.png" width="25px"/>
-                    <img class="dot a4" id="btnD" src="card_images/dot.png" width="25px"/> -->
+                <div id="image4" class="img">
+                    <img class="pet-card__img" id="petCard4" src="card_images/pet-photo_4.png" />
                 </div>
 
-                <h3 class="pet-card__text">Emanuel</h3>
-                <p class="pet-card__text">Kitten &#x2022 Domestic Short Hair 1 mile away</p>
+                <div id="image3" class="img">
+                    <img class="pet-card__img" id="petCard3" src="card_images/pet-photo_3.png" />
+                </div>
+
+                <div id="image2" class="img">
+                    <img class="pet-card__img" id="petCard2" src="card_images/pet-photo_2.png" />
+                </div>
+
+                <div id="image1" class="img">
+                    <img class="pet-card__img" id="petCard1" src="card_images/pet-photo_1.png" />
+                </div>
             </div>
+            
+            <div class="pet-card__text-container">
+                <!-- <div class="dots-container"> -->
+                    <div class="dots">
+                        <div class="dot a1 dot1">
+                            <img src="card_images/pawprint.png" id="btnA" width="25px"/>
+                        </div>
+                        <div class="dot a2 dot2">
+                            <img src="card_images/dot.png" id="btnB" width="25px"/>
+
+                        </div>
+                        <div class="dot a3 dot3">
+                            <img src="card_images/dot.png" id="btnC" width="25px"/>
+
+                        </div>
+                        <div class="dot a4 dot4">
+                            <img src="card_images/dot.png" id="btnD" width="25px"/>
+                        </div>
+                    <!-- </div> -->
+                </div>
+
+            <h3 class="pet-card__text">Emanuel</h3>
+            <p class="pet-card__text">Kitten &#x2022 Domestic Short Hair 1 mile away</p>
         </div>
     </div>
-    
 </body>
+
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="main.js"></script>
