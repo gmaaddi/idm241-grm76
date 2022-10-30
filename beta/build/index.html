@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="pet-card__container"> 
+    <div class="title__container">
+        <h1 class="title__text">
+            <span class="title__underline">IDM241 Microinteractions - Beta</span>
+        </h1>
+    </div>
+    
+    <section class="pet-card__container"> 
         <div class="pet-card">
             <div class="picContainer carousel">        
                 <div class="heart-circle">
@@ -60,7 +66,128 @@
             <h3 class="pet-card__text">Emanuel</h3>
             <p class="pet-card__text">Kitten &#x2022 Domestic Short Hair 1 mile away</p>
         </div>
-    </div>
+    </section>
+
+    <section class="original__container">
+        <h2 class="original__text">
+            Beta Overview
+        </h2>
+
+        <div class="card__container">
+            <div class="card card1">
+                <img class="card__icon" src="icon_images/plus.png" alt="triggers-icon" height="45px">
+                <h3>Triggers</h3>
+                <ul>
+                    <li>Hover over/off image slider dots</li>
+                    <li>Click on image slider dots</li>
+                    <li>Hover over/off round heart button</li>
+                    <li>Click/unclick heart icon</li>
+                </ul>
+            </div>
+
+            <div class="card card2">
+                <img class="card__icon" src="icon_images/check.png" alt="rules-icon" height="45px">
+                <h3>Rules</h3>
+
+                <h5>Hover over image slider dots:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                </ul>
+
+                <h5>Hover off image slider dots:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                </ul>
+
+                <h5>Click on image slider dots:</h5>
+                <ul>
+                    <li>Selected dot changes to a pawprint icon</li>
+                    <li>Previously selected pawprint will change to a dot</li>
+                    <li>Displayed cat image fades out as new cat image that corresponds to the selected dot fades in; 0.75 seconds</li>
+                </ul>
+
+                <h5>Hover over round heart button:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                    <li>White circle behind heart icon fades from 50% opacity to 100% opacity; 0.3 seconds</li>
+                </ul>
+
+                <h5>Hover off round heart button:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                    <li>White circle behind heart icon fades from 100% opacity to 50% opacity; 0.3 seconds</li>
+                </ul>
+
+                <h5>Click on heart icon:</h5>
+                <ul>
+                    <li>Purple fades in to fill heart icon; 0.5 seconds</li>
+                    <li>Heart icon increases in scale and shrinks back to original size, retaining purple fill; 0.5 seconds</li>
+                    <li>The selected cat is added to the user's favorites, which is updated in the database</li>
+                </ul>
+
+                <h5>Unclick heart icon:</h5>
+                <ul>
+                    <li>Purple fill fades out, leaving the heart icon with a stroke and no fill; 0.5 seconds</li>
+                    <li>The cat is removed from the user's favorites, which is updated in the database</li>
+                </ul>
+            </div>
+
+            <div class="card card3">
+                <img class="card__icon" src="icon_images/warning-sign.png" alt="feedback-icon" height="45px">
+                <h3>Feedback</h3>
+                <h5>Hover over image slider dots:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                </ul>
+
+                <h5>Hover off image slider dots:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                </ul>
+
+                <h5>Click on image slider dots:</h5>
+                <ul>
+                    <li>Selected dot changes to a pawprint icon</li>
+                    <li>Previously selected pawprint will change to a dot</li>
+                    <li>Displayed cat image fades out as new cat image that corresponds to the selected dot fades in; 0.75 seconds</li>
+                </ul>
+
+                <h5>Hover over round heart button:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                    <li>White circle behind heart icon fades from 50% opacity to 100% opacity; 0.3 seconds</li>
+                </ul>
+
+                <h5>Hover off round heart button:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                    <li>White circle behind heart icon fades from 100% opacity to 50% opacity; 0.3 seconds</li>
+                </ul>
+
+                <h5>Click on heart icon:</h5>
+                <ul>
+                    <li>Purple fades in to fill heart icon; 0.5 seconds</li>
+                    <li>Heart icon increases in scale and shrinks back to original size, retaining purple fill; 0.5 seconds</li>
+                </ul>
+
+                <h5>Unclick heart icon:</h5>
+                <ul>
+                    <li>Purple fill fades out, leaving the heart icon with a stroke and no fill; 0.5 seconds</li>
+                </ul>
+            </div>
+
+            <div class="card card4">
+                <img class="card__icon" src="icon_images/arrow.png" alt="loops-modes-icon" height="45px">
+                <h3>Loops &#38; Modes</h3>
+                <p>Mode: Additional cat images appear when users interact with the slider dots</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom">
+        <p>Images courtesy of Petfinder for educational purposes</p>
+    </section>
+
 </body>
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
