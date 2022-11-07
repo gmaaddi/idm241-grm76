@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="title__container">
         <h1 class="title__text">
-            <span class="title__underline">IDM241 Microinteractions - Beta</span>
+            <span class="title__underline">IDM 241 Microinteractions - Beta</span>
         </h1>
     </div>
     
     <section class="pet-card__container"> 
         <div class="pet-card">
-            <div class="picContainer carousel">        
+            <div class="carousel">   
                 <div class="heart-circle">
                     <div class='large-font text-center top-20 heart-container' id="heart-container">
                         <ion-icon name="heart">
@@ -25,48 +26,42 @@
                         </ion-icon>
                     </div>
                 </div>
-
-                <div id="image4" class="img">
-                    <img class="pet-card__img" id="petCard4" src="card_images/pet-photo_4.png" />
+                
+                <div id="image1" class="pet-img-container image1">
+                    <img class="pet-card__img" id="petCard1" src="card_images/pet-photo_1.png" />
                 </div>
-
-                <div id="image3" class="img">
+                
+                <div id="image2" class="pet-img-container image2">
+                    <img class="pet-card__img" id="petCard2" src="card_images/pet-photo_2.png" />
+                </div>
+                
+                <div id="image3" class="pet-img-container image3">
                     <img class="pet-card__img" id="petCard3" src="card_images/pet-photo_3.png" />
                 </div>
 
-                <div id="image2" class="img">
-                    <img class="pet-card__img" id="petCard2" src="card_images/pet-photo_2.png" />
-                </div>
-
-                <div id="image1" class="img">
-                    <img class="pet-card__img" id="petCard1" src="card_images/pet-photo_1.png" />
+                <div id="image4" class="pet-img-container image4">
+                    <img class="pet-card__img" id="petCard4" src="card_images/pet-photo_4.png" />
                 </div>
             </div>
-            
+
             <div class="pet-card__text-container">
-                <!-- <div class="dots-container"> -->
-                    <div class="dots">
-                        <div class="dot a1 dot1">
-                            <img src="card_images/pawprint.png" id="btnA" width="25px"/>
-                        </div>
-                        <div class="dot a2 dot2">
-                            <img src="card_images/dot.png" id="btnB" width="25px"/>
-
-                        </div>
-                        <div class="dot a3 dot3">
-                            <img src="card_images/dot.png" id="btnC" width="25px"/>
-
-                        </div>
-                        <div class="dot a4 dot4">
-                            <img src="card_images/dot.png" id="btnD" width="25px"/>
-                        </div>
-                    <!-- </div> -->
+                <div class="dots">
+                    <img src="card_images/pawprint.png" class="dot a1" width="25px"/>
+                    <img src="card_images/dot.png" class="dot a2" width="25px"/>
+                    <img src="card_images/dot.png" class="dot a3" width="25px"/>
+                    <img src="card_images/dot.png" class="dot a4" width="25px"/>
                 </div>
 
-            <h3 class="pet-card__text">Emanuel</h3>
-            <p class="pet-card__text">Kitten &#x2022 Domestic Short Hair 1 mile away</p>
+                <h3 class="pet-card__text">Emanuel</h3>
+                <p class="pet-card__text">Kitten &#x2022 Domestic Short Hair 1 mile away</p>
+            </div>
         </div>
     </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
 
     <section class="original__container">
         <h2 class="original__text">
