@@ -299,6 +299,10 @@ text-underline-offset: 0.5rem;
   flex-direction: row;
   justify-content: center;
 }
+
+.mode-text {
+  color: black;
+}
   
 figure {
   margin: 0;
