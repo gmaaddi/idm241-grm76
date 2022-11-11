@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDM241 Microinteractions Final</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="title__container">
+        <h1 class="title__text">
+            <span class="title__underline">IDM241 Microinteractions</span>
+        </h1>
+    </div>
+
+    <section class="reference__container">
+        <h2 class="reference__text">
+            Original Interface
+        </h2>
+        <h4 class="reference__underline">
+            <a href="https://www.petfinder.com/search/cats-for-adoption/us/pa/philadelphia/" target="_blank">Petfinder Website</a>
+        </h4>
+    </section>
+
+    <section class="original__container">
+        <h2 class="original__text">
+            Final Overview
+        </h2>
+
+        <div class="card__container">
+            <div class="card card1">
+                <img class="card__icon" src="icon_images/plus.png" alt="triggers-icon" height="45px">
+                <h3>Triggers</h3>
+                <ul>
+                    <li>Hover over/off image slider dots</li>
+                    <li>Click on image slider dots</li>
+                    <li>Hover over/off round heart button</li>
+                    <li>Click/unclick heart icon</li>
+                    <li>Hover over/off purple rectangular button</li>
+                    <li>Click on purple rectangular button</li>
+                </ul>
+            </div>
+
+            <div class="card card2">
+                <img class="card__icon" src="icon_images/check.png" alt="rules-icon" height="45px">
+                <h3>Rules</h3>
+
+                <h5>Hover over image slider dots:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                </ul>
+
+                <h5>Hover off image slider dots:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                </ul>
+
+                <h5>Click on image slider dots:</h5>
+                <ul>
+                    <li>Selected dot gradually changes to a pawprint icon</li>
+                    <li>Previously selected pawprint gradually changes to a dot</li>
+                    <li>Displayed cat image fades out as new cat image that corresponds to the selected dot fades in; 0.75 seconds</li>
+                </ul>
+
+                <h5>Hover over round heart button:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                    <li>White circle behind heart icon fades from 50% opacity to 100% opacity; 0.3 seconds</li>
+                </ul>
+
+                <h5>Hover off round heart button:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                    <li>White circle behind heart icon fades from 100% opacity to 50% opacity; 0.3 seconds</li>
+                </ul>
+
+                <h5>Click on heart icon:</h5>
+                <ul>
+                    <li>Purple fades in to fill heart icon; 0.5 seconds</li>
+                    <li>Heart icon increases in scale and shrinks back to original size, retaining purple fill; 0.5 seconds</li>
+                    <li>The selected cat is added to the user's favorites, which is updated in the database</li>
+                </ul>
+
+                <h5>Unclick heart icon:</h5>
+                <ul>
+                    <li>Purple fill fades out, leaving the heart icon with a stroke and no fill; 0.5 seconds</li>
+                    <li>The cat is removed from the user's favorites, which is updated in the database</li>
+                </ul>
+
+                <h5>Hover over purple rectangular button:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                    <li>Darker purple fill fades in; 0.3 seconds</li>
+                </ul>
+
+                <h5>Hover off purple rectangular button:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                    <li>Darker purple fill fades out to reveal lighter purple fill; 0.3 seconds</li>
+                </ul>
+
+                <h5>Click on purple rectangular button</h5>
+                <ul>
+                    <li>Card rotates 180 degrees along the Y-axis to reveal information on the opposite side of the card</li>
+                </ul>
+            </div>
+
+            <div class="card card3">
+                <img class="card__icon" src="icon_images/warning-sign.png" alt="feedback-icon" height="45px">
+                <h3>Feedback</h3>
+                <h5>Hover over image slider dots:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                </ul>
+
+                <h5>Hover off image slider dots:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                </ul>
+
+                <h5>Click on image slider dots:</h5>
+                <ul>
+                    <li>Selected dot gradually changes to a pawprint icon</li>
+                    <li>Previously selected pawprint gradually changes to a dot</li>
+                    <li>Displayed cat image fades out as new cat image that corresponds to the selected dot fades in; 0.75 seconds</li>
+                </ul>
+
+                <h5>Hover over round heart button:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                    <li>White circle behind heart icon fades from 50% opacity to 100% opacity; 0.3 seconds</li>
+                </ul>
+
+                <h5>Hover off round heart button:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                    <li>White circle behind heart icon fades from 100% opacity to 50% opacity; 0.3 seconds</li>
+                </ul>
+
+                <h5>Click on heart icon:</h5>
+                <ul>
+                    <li>Purple fades in to fill heart icon; 0.5 seconds</li>
+                    <li>Heart icon increases in scale and shrinks back to original size, retaining purple fill; 0.5 seconds</li>
+                </ul>
+
+                <h5>Unclick heart icon:</h5>
+                <ul>
+                    <li>Purple fill fades out, leaving the heart icon with a stroke and no fill; 0.5 seconds</li>
+                </ul>
+
+                <h5>Hover over purple rectangular button:</h5>
+                <ul>
+                    <li>Cursor changes to pointer</li>
+                    <li>Darker purple fill fades in; 0.3 seconds</li>
+                </ul>
+
+                <h5>Hover off purple rectangular button:</h5>
+                <ul>
+                    <li>Cursor reverts to default</li>
+                    <li>Darker purple fill fades out to reveal lighter purple fill; 0.3 seconds</li>
+                </ul>
+
+                <h5>Click on purple rectangular button</h5>
+                <ul>
+                    <li>Card rotates 180 degrees along the Y-axis to reveal information on the opposite side of the card</li>
+                </ul>
+            </div>
+
+            <div class="card card4">
+                <img class="card__icon" src="icon_images/arrow.png" alt="loops-modes-icon" height="45px">
+                <h3>Loops &#38; Modes</h3>
+               <ul>
+                    <li>Mode: Additional cat images appear when users interact with the slider dots</li>
+                </ul>
+                   
+                <ul>
+                    <li>Mode: Additional information containing a brief biography of the pet and contact information is shown when users click on the "More Information button</li>
+                <ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="visualization__container">
+        <h2 class="visualization__text">
+            Final Visualization
+        </h2>
+
+        <h5>Click on Image Slider Dots</h5>
+        <div class="beta-container">
+            <figure>
+                <img class="beta" src="final_images/Dots-1.jpg" alt="final-1">
+                <figcaption>Click on the second image slider dot</figcaption>
+            </figure>
+            
+            <figure>
+                <img class="beta" src="final_images/Dots-2.jpg" alt="final-2">
+                <figcaption>Cat image 1 fades out as cat image 2 fades in; pawprint changes to a dot while the second image slider dot changes to a pawprint</figcaption>
+            </figure>
+
+            <figure>
+                <img class="beta" src="final_images/Dots-3.jpg" alt="final-3">
+                <figcaption>Second image slider dot is a pawprint; second image is visible</figcaption>
+            </figure>
+        </div>
+
+        <h5>Hover Over Round Heart Button</h5>
+        <div class="beta-container">
+
+            <figure>
+                <img class="beta" src="final_images/Heart-Hover-1.jpg" alt="final-1">
+                <figcaption>Hover over heart button</figcaption>
+            </figure>
+
+            <figure>
+                <img class="beta" src="final_images/Heart-Hover-2.jpg" alt="final-2">
+                <figcaption>Opacity of white circle fading in from 50% to 100%</figcaption>
+            </figure>
+
+            <figure>
+                <img class="beta" src="final_images/Heart-Hover-3.jpg" alt="final-3">
+                <figcaption>White circle behind the heart at 100% opacity</figcaption>
+            </figure>
+        </div>
+
+        <h5>Click on Heart Icon</h5>
+        <div class="beta-container beta-container3">
+
+            <figure>
+                <img class="beta" src="final_images/Heart-Fill-1.jpg" alt="final-1">
+                <figcaption>When the heart icon is clicked, a purple fill fades in</figcaption>
+            </figure>
+
+            <figure>
+                <img class="beta" src="final_images/Heart-Fill-2.jpg" alt="final-2">
+                <figcaption>Opacity of purple heart fading in to 100%</figcaption>
+            </figure>
+
+            <figure>
+                <img class="beta" src="final_images/Heart-Fill-3.jpg" alt="final-3">
+                <figcaption>Heart icon increases in scale</figcaption>
+            </figure>
+
+            <figure>
+                <img class="beta" src="final_images/Heart-Fill-4.jpg" alt="final-4">
+                <figcaption>Heart icon shrinks back to original size</figcaption>
+            </figure>
+        </div>
+
+        <h5>Hover Over Purple Rectangular Button</h5>
+        <div class="beta-container">
+
+            <figure>
+                <img class="beta" src="final_images/Button-Hover-1.jpg" alt="final-1">
+                <figcaption>Hover over purple rectangular button</figcaption>
+            </figure>
+
+            <figure>
+                <img class="beta" src="final_images/Button-Hover-2.jpg" alt="final-2">
+                <figcaption>Darker purple fill fading in</figcaption>
+            </figure>
+
+            <figure>
+                <img class="beta" src="final_images/Button-Hover-3.jpg" alt="final-3">
+                <figcaption>Rectangular button has a dark purple fill</figcaption>
+            </figure>
+        </div>
+
+        <h5>Click on Purple Rectangular Button</h5>
+        <div class="beta-container beta-container5">
+
+            <figure>
+                <img class="beta" src="final_images/Button-Click-1.jpg" alt="final-1">
+                <figcaption>When the purple rectangular button is clicked, the card rotates 180 degrees</figcaption>
+            </figure>
+
+            <figure>
+                <img class="beta" src="final_images/Button-Click-2.png" alt="final-2">
+                <figcaption>The front of the card is being turned over</figcaption>
+            </figure>
+
+            <figure>
+                <img class="beta" src="final_images/Button-Click-3.png" alt="final-3">
+                <figcaption>The back of the card is being revealed</figcaption>
+            </figure>
+
+            <figure>
+                <img class="beta" src="final_images/Button-Click-4.jpg" alt="final-4">
+                <figcaption>The back of the card is visible</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="bottom">
+        <p>Images courtesy of Petfinder for educational purposes</p>
+    </section>
+
+</body>
+</html>
+
