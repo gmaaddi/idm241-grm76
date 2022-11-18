@@ -61,7 +61,7 @@ h5 {
   font-family: 'Archivo-Bold', serif;
   font-size: 1rem;
   margin: 0.785rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* 16px */
@@ -69,6 +69,10 @@ p {
   font-family: 'Archivo-Regular', serif;
   font-size: 1rem;
   margin: 0;
+}
+
+.visualization-title {
+  text-align: center;
 }
 
 /* 30px padding, 1200px max-width */
@@ -280,6 +284,9 @@ figure {
 
   .final-container {
     width: 40%;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border-bottom: #5B1CAE 1px solid;
   }
 
   .final {
