@@ -37,9 +37,9 @@
                     <li>Hover over/off image slider dots</li>
                     <li>Click on image slider dots</li>
                     <li>Hover over/off round heart button</li>
-                    <li>Click/unclick heart icon</li>
+                    <li>Click on heart icon (selected/unselected)</li>
                     <li>Hover over/off purple rectangular button</li>
-                    <li>Click on purple rectangular button</li>
+                    <li>Click on purple rectangular button (front/back)</li>
                 </ul>
             </div>
 
@@ -76,14 +76,14 @@
                     <li>White circle behind heart icon fades from 100% opacity to 50% opacity; 0.3 seconds</li>
                 </ul>
 
-                <h5>Click on heart icon:</h5>
+                <h5>Click on heart icon (unselected):</h5>
                 <ul>
                     <li>Purple fades in to fill heart icon; 0.5 seconds</li>
                     <li>Heart icon increases in scale and shrinks back to original size, retaining purple fill; 0.5 seconds</li>
                     <li>The selected cat is added to the user's favorites, which is updated in the database</li>
                 </ul>
 
-                <h5>Unclick heart icon:</h5>
+                <h5>Click on heart icon (selected):</h5>
                 <ul>
                     <li>Purple fill fades out, leaving the heart icon with a stroke and no fill; 0.5 seconds</li>
                     <li>The cat is removed from the user's favorites, which is updated in the database</li>
@@ -101,9 +101,14 @@
                     <li>Darker purple fill fades out to reveal lighter purple fill; 0.3 seconds</li>
                 </ul>
 
-                <h5>Click on purple rectangular button</h5>
+                <h5>Click on purple rectangular button (front):</h5>
                 <ul>
-                    <li>Card rotates 180 degrees along the Y-axis to reveal information on the opposite side of the card</li>
+                    <li>Card flips over to the right, rotating 180 degrees along the Y-axis to reveal information on the back of the card</li>
+                </ul>
+
+                <h5>Click on purple rectangular button (back):</h5>
+                <ul>
+                    <li>Card flips over to the left, rotating 180 degrees along the Y-axis to reveal information on the front of the card</li>
                 </ul>
             </div>
 
@@ -139,13 +144,13 @@
                     <li>White circle behind heart icon fades from 100% opacity to 50% opacity; 0.3 seconds</li>
                 </ul>
 
-                <h5>Click on heart icon:</h5>
+                <h5>Click on heart icon (unselected):</h5>
                 <ul>
                     <li>Purple fades in to fill heart icon; 0.5 seconds</li>
                     <li>Heart icon increases in scale and shrinks back to original size, retaining purple fill; 0.5 seconds</li>
                 </ul>
 
-                <h5>Unclick heart icon:</h5>
+                <h5>Click on heart icon (selected):</h5>
                 <ul>
                     <li>Purple fill fades out, leaving the heart icon with a stroke and no fill; 0.5 seconds</li>
                 </ul>
@@ -166,6 +171,11 @@
                 <ul>
                     <li>Card rotates 180 degrees along the Y-axis to reveal information on the opposite side of the card</li>
                 </ul>
+
+                <h5>Click on purple rectangular button (back):</h5>
+                <ul>
+                    <li>Card flips over to the left, rotating 180 degrees along the Y-axis to reveal information on the front of the card</li>
+                </ul>
             </div>
 
             <div class="card card4">
@@ -176,7 +186,7 @@
                 </ul>
                    
                 <ul>
-                    <li>Mode: Additional information containing a brief biography of the pet and contact information is shown when users click on the "More Information button</li>
+                    <li>Mode: Additional information containing a brief biography of the pet and contact information is shown when users click on the "More Information" button</li>
                 <ul>
             </div>
         </div>
@@ -187,7 +197,7 @@
             Final Visualization
         </h2>
 
-        <h5>Click on Image Slider Dots</h5>
+        <h4 class="visualization-title">Click on Image Slider Dots</h4>
         <div class="final-container">
             <figure>
                 <img class="final" src="final_images/Dots-1.jpg" alt="final-1">
@@ -205,7 +215,7 @@
             </figure>
         </div>
 
-        <h5>Hover Over Round Heart Button</h5>
+        <h4 class="visualization-title">Hover Over Round Heart Button</h4>
         <div class="final-container">
 
             <figure>
@@ -224,7 +234,7 @@
             </figure>
         </div>
 
-        <h5>Click on Heart Icon</h5>
+        <h4 class="visualization-title">Click on Heart Icon (Unselected)</h4>
         <div class="final-container final-container3">
 
             <figure>
@@ -248,7 +258,26 @@
             </figure>
         </div>
 
-        <h5>Hover Over Purple Rectangular Button</h5>
+        <h4 class="visualization-title">Click on Heart Button (Selected)</h4>
+        <div class="final-container">
+
+            <figure>
+                <img class="final" src="final_images/Heart-Unfill-1.jpg" alt="final-1">
+                <figcaption class="caption">When the heart icon is clicked, the purple fill fades out</figcaption>
+            </figure>
+
+            <figure>
+                <img class="final" src="final_images/Heart-Unfill-2.jpg" alt="final-2">
+                <figcaption class="caption">Opacity of purple heart fading out to 0%</figcaption>
+            </figure>
+
+            <figure>
+                <img class="final" src="final_images/Heart-Unfill-3.jpg" alt="final-3">
+                <figcaption class="caption">Heart icon reverts to default state with a stroke and no fill</figcaption>
+            </figure>
+        </div>
+
+        <h4 class="visualization-title">Hover Over Purple Rectangular Button</h4>
         <div class="final-container">
 
             <figure>
@@ -267,7 +296,7 @@
             </figure>
         </div>
 
-        <h5>Click on Purple Rectangular Button</h5>
+        <h4 class="visualization-title">Click on Purple Rectangular Button (Front)</h4>
         <div class="final-container final-container5">
 
             <figure>
@@ -288,6 +317,30 @@
             <figure>
                 <img class="final" src="final_images/Button-Click-4.jpg" alt="final-4">
                 <figcaption class="caption"> The back of the card is visible</figcaption>
+            </figure>
+        </div>
+
+        <h4 class="visualization-title">Click on Purple Rectangular Button (Back)</h4>
+        <div class="final-container final-container5">
+
+            <figure>
+                <img class="final" src="final_images/Button-Click-4.1.jpg" alt="final-1">
+                <figcaption class="caption">When the purple rectangular button is clicked, the card rotates 180 degrees</figcaption>
+            </figure>
+
+            <figure>
+                <img class="final" src="final_images/Button-Click-3.png" alt="final-2">
+                <figcaption class="caption-alt">The back of the card is being turned over</figcaption>
+            </figure>
+
+            <figure>
+                <img class="final" src="final_images/Button-Click-2.png" alt="final-3">
+                <figcaption class="caption-alt">The front of the card is being revealed</figcaption>
+            </figure>
+
+            <figure>
+                <img class="final" src="final_images/Button-Click-1.1.jpg" alt="final-4">
+                <figcaption class="caption"> The front of the card is visible</figcaption>
             </figure>
         </div>
     </section>
