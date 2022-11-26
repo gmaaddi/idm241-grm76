@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDM 241 Final Build</title>
+    <link rel="normalize" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="title__container">
+        <h1 class="title__text">
+            <span class="title__underline">IDM 241 Microinteractions - Final</span>
+        </h1>
+    </div>
+
+    <section class="pet-card__container"> 
+        <div class="pet-card">
+            <div class="card-face card-face__front">
+                <div class="carousel">   
+                    <div class="heart-circle">
+                        <div class='large-font text-center top-20 heart-container' id="heart-container">
+                            <ion-icon name="heart">
+                                <div class='purple-heart'></div>
+                            </ion-icon>
+                        </div>
+                    </div>
+                    
+                    <div id="image1" class="pet-img-container image1">
+                        <img class="pet-card__img" id="petCard1" src="card_images/pet-photo_1.png" />
+                    </div>
+                    
+                    <div id="image2" class="pet-img-container image2">
+                        <img class="pet-card__img" id="petCard2" src="card_images/pet-photo_2.png" />
+                    </div>
+                    
+                    <div id="image3" class="pet-img-container image3">
+                        <img class="pet-card__img" id="petCard3" src="card_images/pet-photo_3.png" />
+                    </div>
+
+                    <div id="image4" class="pet-img-container image4">
+                        <img class="pet-card__img" id="petCard4" src="card_images/pet-photo_4.png" />
+                    </div>
+                </div>
+
+                <div class="pet-card__text-container">
+                    <div class="dots">
+                        <img src="card_images/pawprint.png" class="dot a1" width="25px"/>
+                        <img src="card_images/dot.png" class="dot a2" width="25px"/>
+                        <img src="card_images/dot.png" class="dot a3" width="25px"/>
+                        <img src="card_images/dot.png" class="dot a4" width="25px"/>
+                    </div>
+
+                    <h3 class="pet-card__text">Emanuel</h3>
+                    <p class="pet-card__text">Kitten &#x2022 Domestic Short Hair 1 mile away</p>
+                </div>
+
+                <div class="flip-button-container">
+                    <button class="front-button flip-button">
+                        <h3 class="button-text main-text">More Information </h3>
+                        <h3 class="button-text"> &#x21aa;</h3>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-face card-face__back">
+                <div class="card-back-content">
+                    <h3 class="back-title">Meet Emmanuel</h3>
+                    <p class="back-text">Emanuel is a young, lovable boy looking to be the newest member of your family. He’s well behaved, affectionate, playful, and loves cuddles. He is cat friendly too!</p>
+                    <hr>
+
+                    <div class="contact-container">
+                        <img src="card_images/building.png" class="contact-icon" width="25px"/>
+                        <p class="contact-text">Stray Cat Relief Fund</p>
+                    </div>
+
+                    <div class="contact-container">
+                        <img src="card_images/location.png" class="contact-icon" width="25px"/>
+                        <p class="contact-text">PO Box 54845 <br>Philadelphia, PA 19148</p>
+                    </div>
+
+                    <div class="contact-container">
+                        <img src="card_images/email.png" class="contact-icon" width="25px"/>
+                        <p class="contact-text">straycatrelieffund@gmail.com</p>
+                    </div>
+
+                    <div class="contact-container">
+                        <img src="card_images/phone.png" class="contact-icon" width="25px"/>
+                        <p class="contact-text">(267) 507-5297</p>
+                    </div>
+                </div>
+
+                <div class="flip-button-container">
+                    <button class="flip-button back-button">
+                        <h3 class="button-text"> &#8617;</h3>
+                        <h3 class="button-text main-text">Back to Front </h3>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="original__container">
+        <h2 class="original__text">
+            Final Overview
+        </h2>
+
+        <div class="card__container">
+            <div class="card card1">
+                <img class="card__icon" src="icon_images/plus.png" alt="triggers-icon" height="45px">
+                <h3>Triggers</h3>
+
+                <div class="card__text">
+                    <ul>
+                        <li>Hover over/off image slider dots</li>
+                        <li>Click on image slider dots</li>
+                        <li>Hover over/off round heart button</li>
+                        <li>Click on heart icon (selected/unselected)</li>
+                        <li>Hover over/off purple rectangular button</li>
+                        <li>Click on purple rectangular button (front/back)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card card2">
+                <img class="card__icon" src="icon_images/check.png" alt="rules-icon" height="45px">
+                <h3>Rules</h3>
+
+                <div class="card__text">
+                    <h5>Hover over image slider dots:</h5>
+                    <ul>
+                        <li>Cursor changes to pointer</li>
+                    </ul>
+
+                    <h5>Hover off image slider dots:</h5>
+                    <ul>
+                        <li>Cursor reverts to default</li>
+                    </ul>
+
+                    <h5>Click on image slider dots:</h5>
+                    <ul>
+                        <li>Selected dot gradually changes to a pawprint icon</li>
+                        <li>Previously selected pawprint gradually changes to a dot</li>
+                        <li>Displayed cat image fades out as new cat image that corresponds to the selected dot fades in; 0.75 seconds</li>
+                    </ul>
+
+                    <h5>Hover over round heart button:</h5>
+                    <ul>
+                        <li>Cursor changes to pointer</li>
+                        <li>White circle behind heart icon fades from 50% opacity to 100% opacity; 0.3 seconds</li>
+                    </ul>
+
+                    <h5>Hover off round heart button:</h5>
+                    <ul>
+                        <li>Cursor reverts to default</li>
+                        <li>White circle behind heart icon fades from 100% opacity to 50% opacity; 0.3 seconds</li>
+                    </ul>
+
+                    <h5>Click on heart icon (unselected):</h5>
+                    <ul>
+                        <li>Purple fades in to fill heart icon; 0.5 seconds</li>
+                        <li>Heart icon increases in scale and shrinks back to original size, retaining purple fill; 0.5 seconds</li>
+                        <li>The selected cat is added to the user's favorites, which is updated in the database</li>
+                    </ul>
+
+                    <h5>Click on heart icon (selected):</h5>
+                    <ul>
+                        <li>Purple fill fades out, leaving the heart icon with a stroke and no fill; 0.5 seconds</li>
+                        <li>The cat is removed from the user's favorites, which is updated in the database</li>
+                    </ul>
+
+                    <h5>Hover over purple rectangular button:</h5>
+                    <ul>
+                        <li>Cursor changes to pointer</li>
+                        <li>Darker purple fill fades in; 0.3 seconds</li>
+                    </ul>
+
+                    <h5>Hover off purple rectangular button:</h5>
+                    <ul>
+                        <li>Cursor reverts to default</li>
+                        <li>Darker purple fill fades out to reveal lighter purple fill; 0.3 seconds</li>
+                    </ul>
+
+                    <h5>Click on purple rectangular button (front):</h5>
+                    <ul>
+                        <li>Card flips over to the right, rotating 180 degrees along the Y-axis to reveal information on the back of the card</li>
+                    </ul>
+
+                    <h5>Click on purple rectangular button (back):</h5>
+                    <ul>
+                        <li>Card flips over to the left, rotating 180 degrees along the Y-axis to reveal information on the front of the card</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card card3">
+                <img class="card__icon" src="icon_images/warning-sign.png" alt="feedback-icon" height="45px">
+                <h3>Feedback</h3>
+
+                <div class="card__text">
+                    <h5>Hover over image slider dots:</h5>
+                    <ul>
+                        <li>Cursor changes to pointer</li>
+                    </ul>
+
+                    <h5>Hover off image slider dots:</h5>
+                    <ul>
+                        <li>Cursor reverts to default</li>
+                    </ul>
+
+                    <h5>Click on image slider dots:</h5>
+                    <ul>
+                        <li>Selected dot gradually changes to a pawprint icon</li>
+                        <li>Previously selected pawprint gradually changes to a dot</li>
+                        <li>Displayed cat image fades out as new cat image that corresponds to the selected dot fades in; 0.75 seconds</li>
+                    </ul>
+
+                    <h5>Hover over round heart button:</h5>
+                    <ul>
+                        <li>Cursor changes to pointer</li>
+                        <li>White circle behind heart icon fades from 50% opacity to 100% opacity; 0.3 seconds</li>
+                    </ul>
+
+                    <h5>Hover off round heart button:</h5>
+                    <ul>
+                        <li>Cursor reverts to default</li>
+                        <li>White circle behind heart icon fades from 100% opacity to 50% opacity; 0.3 seconds</li>
+                    </ul>
+
+                    <h5>Click on heart icon (unselected):</h5>
+                    <ul>
+                        <li>Purple fades in to fill heart icon; 0.5 seconds</li>
+                        <li>Heart icon increases in scale and shrinks back to original size, retaining purple fill; 0.5 seconds</li>
+                    </ul>
+
+                    <h5>Click on heart icon (selected):</h5>
+                    <ul>
+                        <li>Purple fill fades out, leaving the heart icon with a stroke and no fill; 0.5 seconds</li>
+                    </ul>
+
+                    <h5>Hover over purple rectangular button:</h5>
+                    <ul>
+                        <li>Cursor changes to pointer</li>
+                        <li>Darker purple fill fades in; 0.3 seconds</li>
+                    </ul>
+
+                    <h5>Hover off purple rectangular button:</h5>
+                    <ul>
+                        <li>Cursor reverts to default</li>
+                        <li>Darker purple fill fades out to reveal lighter purple fill; 0.3 seconds</li>
+                    </ul>
+
+                    <h5>Click on purple rectangular button</h5>
+                    <ul>
+                        <li>Card rotates 180 degrees along the Y-axis to reveal information on the opposite side of the card</li>
+                    </ul>
+
+                    <h5>Click on purple rectangular button (back):</h5>
+                    <ul>
+                        <li>Card flips over to the left, rotating 180 degrees along the Y-axis to reveal information on the front of the card</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card card4">
+                <img class="card__icon" src="icon_images/arrow.png" alt="loops-modes-icon" height="45px">
+                <h3>Loops &#38; Modes</h3>
+
+                <div class="card__text">
+                    <ul>
+                        <li>Mode: Additional cat images appear when users interact with the slider dots</li>
+                    </ul>
+                    
+                    <ul>
+                        <li>Mode: Additional information containing a brief biography of the pet and contact information is shown when users click on the "More Information" button</li>
+                    <ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom">
+        <p>Images courtesy of Petfinder for educational purposes</p>
+    </section>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
