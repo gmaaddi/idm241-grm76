@@ -1,0 +1,272 @@
+@font-face {
+  font-family: 'Archivo-Bold';
+  src: url('../fonts/Archivo-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+  
+@font-face {
+  font-family: 'Archivo-Regular';
+  src: url('../fonts/Archivo-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+  
+@font-face {
+  font-family: 'ArchivoNarrow-Regular';
+  src: url('../fonts/ArchivoNarrow-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-background:#EFEEF1;
+  --color-purple: #5B1CAE;
+}
+
+* {
+  line-height: 1.5;
+}
+
+/* 67.34px */
+h1 {
+  font-family: 'ArchivoNarrow-Regular', Arial, Helvetica, sans-serif;
+  font-size: 4.209rem;
+}
+  
+/* 37.9px */
+h2 {
+  font-family: 'ArchivoNarrow-Regular', Arial, Helvetica, sans-serif;
+  font-size: 2.369rem;
+  color: var(--color-purple);
+} 
+
+/* 28.43px; 16px */
+h3 {
+  font-family: 'ArchivoNarrow-Regular', Arial, Helvetica, sans-serif;
+  font-size: 1.777rem;
+  margin-bottom: 1rem;
+}
+
+/* 18px */
+p, li {
+  font-family: 'Archivo-Regular', Arial, Helvetica, sans-serif;
+  /* font-size: 21.33px; */
+  font-size: 1.125rem;
+  margin-top: 0;
+}
+
+/* 12px */
+h6 {
+  font-family: 'Archivo-Regular', Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+.hero-container {
+  background-color: var(--color-purple);
+  color: white;
+  margin: 0;
+  width: 100%;
+}
+
+.hero-container__wrapper {
+  display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 32px */
+.hero-container__wrapper-child {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+/* 100px */
+.child1 {
+  margin-left: 6.25rem;
+  flex-direction: column;
+  margin-right: 6.25rem;
+}
+
+/* 100px */
+.child2 {
+  margin-right: 6.25rem;
+}
+
+.hero-title {
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* 16px */
+.hero-description {
+  margin-top: 1rem;
+}
+
+/* 400px; 16px */
+.hero-img {
+  max-height: 25rem;
+  margin-right: 1rem;
+}
+
+/* 100px */
+.content-container {
+  margin: 0 6.25rem;
+}
+
+/* 64px */
+.content-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 4rem auto 0;
+}
+
+/* 100px */
+.content-img {
+  max-width: 62.5rem;
+  border: 1px solid;
+}
+
+/* 450px */
+.style-tile, .heart-guide {
+  max-width: 28.125rem;
+}
+
+/* 450px; 32px*/
+.flip-card {
+  max-height: 28.125rem;
+  margin: 0 2rem;
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 450px */
+.video {
+  max-width: 28.125rem;
+}
+
+
+
+.link {
+  text-decoration: underline;
+  text-decoration-color: var(--color-purple);
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.4rem;
+  color: black;
+}
+
+/* margin: 30px 0 60px */
+.final-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.875rem 0 0;
+}
+
+/* 15px; 400px */
+.final {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: .9375rem;
+  margin-left: .9375rem;
+
+  max-height: 25rem;
+}
+
+/* 30px */
+.final-container-bottom {
+  margin-bottom: 1.875rem;
+  padding: 0;
+}
+
+/* 64px */
+.bottom-section {
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1070px) {
+  /* 32px */
+  .hero-container__wrapper {
+    flex-direction: column;
+    margin: 0 2rem;
+  }
+
+  .hero-container__wrapper-child, video {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    text-align: center;
+  }
+
+  /* 32px */
+  .content-img {
+    margin: 0 2rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .final-container {
+    margin: 0 auto;
+  }
+
+  /* 8px */
+  .final {
+    margin: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-container__wrapper-child {
+    flex-direction: column;
+  }
+
+  .child1 {
+    padding-bottom: 0;
+  }
+
+  /* 16px */
+  .hero-img {
+    margin: 1rem auto;
+  }
+
+  /* 37.9px */
+  h1 {
+    font-size: 2.369rem;
+  }
+
+  /* 21.33px */
+  .hero-description {
+    font-size: 1.333rem;
+  }
+
+  /* 32px */
+  .content-container {
+    margin: 0 2rem;
+  }
+}
